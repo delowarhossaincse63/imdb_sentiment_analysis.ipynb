@@ -1,0 +1,8 @@
+datasets
+gensim
+transformers
+accelerate
+scikit-learn
+pandas
+numpy
+torch
