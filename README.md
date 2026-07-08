@@ -37,8 +37,6 @@ This repository evaluates traditional statistical approaches against modern deep
 ## 📂 Detailed Repository Directory Structure
 
 An breakdown of all included architectural assets across this pipeline deployment:
-
-```text
 imdb_sentiment_analysis/
 ├── .github/
 │   └── workflows/
@@ -58,41 +56,47 @@ imdb_sentiment_analysis/
 ├── requirements.txt              # Pinned baseline architectural package matrix
 └── README.md                     # Primary client documentation hub
 
-🛠️ Reproduction & Local Setup
-1. Environment Cloning
 
+---
+
+## 🛠️ Reproduction & Local Setup
+
+### 1. Environment Cloning
+
+```bash
 git clone [https://github.com/delowarhossaincse63/imdb_sentiment_analysis.ipynb.git](https://github.com/delowarhossaincse63/imdb_sentiment_analysis.ipynb.git)
 cd imdb_sentiment_analysis.ipynb
-
 2. Dependency Extraction
 Initialize a localized environment and install core computational libraries:
+
+Bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install critical NLP frameworks
 pip install -r requirements.txt
-
 3. Executing Notebook
 Open the development environment server and step through the functional programming layers:
-jupyter notebook notebooks/imdb_sentiment_analysis.ipynb
 
+Bash
+jupyter notebook notebooks/imdb_sentiment_analysis.ipynb
 📡 Pipeline Architecture Details
 🔹 Preprocessing Tokenizer Layer
+Python
 # Cleans and standardizes raw unstructured strings
 def advanced_text_cleaning(raw_text):
     # 1. Strip HTML wrappers
     # 2. Tokenize and normalize text case maps
     # 3. Filter alphanumeric sequences and NLTK standard stop vocabularies
     return cleaned_tokens
-
 🔹 Sample Production Inference Hook
+Python
 # Evaluates custom client-facing text inputs through the optimal trained backend
 def live_predict_sentiment(custom_review_string: str):
     # Runs the raw pipeline matrix mapping over the transformer tokenizer
     prediction_probability = optimal_model.predict(custom_review_string)
     sentiment = "Positive" if prediction_probability > 0.5 else "Negative"
     return {"sentiment": sentiment, "confidence_score": float(prediction_probability)}
-
 🤝 Contribution & Optimization
 Feel free to open structural issues or fork the architecture to append higher-order transformer variants like RoBERTa or DeBERTa architectures.
 
