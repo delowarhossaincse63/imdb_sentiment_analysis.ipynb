@@ -56,3 +56,12 @@ An breakdown of all included architectural assets across this pipeline deploymen
 ```bash
 git clone [https://github.com/delowarhossaincse63/imdb_sentiment_analysis.ipynb.git](https://github.com/delowarhossaincse63/imdb_sentiment_analysis.ipynb.git)
 cd imdb_sentiment_analysis.ipynb
+
+2. Dependency Extraction
+Initialize a localized environment and install core computational libraries:
+
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install critical NLP frameworks
+pip install -r requirements.txt
