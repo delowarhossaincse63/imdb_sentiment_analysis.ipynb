@@ -58,7 +58,7 @@ imdb_sentiment_analysis/
 🛠️ Reproduction & Local Setup
 1. Environment Cloning
 Bash
-git clone https://github.com/delowarhossaincse63/imdb_sentiment_analysis.ipynb.git
+git clone [https://github.com/delowarhossaincse63/imdb_sentiment_analysis.ipynb.git](https://github.com/delowarhossaincse63/imdb_sentiment_analysis.ipynb.git)
 cd imdb_sentiment_analysis.ipynb
 2. Dependency Extraction
 Initialize a localized environment and install core computational libraries:
