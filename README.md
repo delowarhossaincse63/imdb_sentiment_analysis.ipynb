@@ -1,6 +1,13 @@
 # 🎬 IMDB Movie Reviews - Sentiment Analysis Benchmarking
 
-An end-to-end Machine Learning and Natural Language Processing (NLP) repository benchmarking various text embedding and vectorization techniques (**TF-IDF, Word2Vec, and BERT Transformers**) to classify text sentiments over 50,000 highly polar IMDB movie reviews.
+Backend NLP benchmarking framework analyzing syntactic and semantic density profiles across vast unstructured textual datasets.
+
+<!-- Dynamic Technical Shields -->
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=Python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white)
+![Transformers](https://img.shields.io/badge/Transformers-HuggingFace-FFD21E?style=for-the-badge&logo=HuggingFace&logoColor=black)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=Jupyter&logoColor=white)
 
 ---
 
@@ -24,49 +31,26 @@ This repository evaluates traditional statistical approaches against modern deep
 
 ---
 
-## 📂 Repository Structure
+## 📂 Detailed Repository Directory Structure
+
+An breakdown of all included architectural assets across this pipeline deployment:
+
 ```text
 imdb_sentiment_analysis/
-├── imdb_sentiment_analysis.ipynb   # Modular Jupyter Notebook containing the full execution pipeline
-└── README.md                        # Professional documentation hub
-🛠️ Reproduction & Local Setup
-1. Environment Cloning
-Bash
-git clone [https://github.com/delowarhossaincse63/imdb_sentiment_analysis.ipynb.git](https://github.com/delowarhossaincse63/imdb_sentiment_analysis.ipynb.git)
-cd imdb_sentiment_analysis.ipynb
-2. Dependency Extraction
-Initialize a localized environment and install core computational libraries:
-
-Bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install critical NLP frameworks
-pip install numpy pandas scikit-learn nltk gensim torch transformers notebook
-3. Executing Notebook
-Open the development environment server and step through the functional programming layers:
-
-Bash
-jupyter notebook imdb_sentiment_analysis.ipynb
-📡 Pipeline Architecture Details
-🔹 Preprocessing Tokenizer Layer
-Python
-# Cleans and standardizes raw unstructured strings
-def advanced_text_cleaning(raw_text):
-    # 1. Strip HTML wrappers
-    # 2. Tokenize and normalize text case maps
-    # 3. Filter alphanumeric sequences and NLTK standard stop vocabularies
-    return cleaned_tokens
-🔹 Sample Production Inference Hook
-Python
-# Evaluates custom client-facing text inputs through the optimal trained backend
-def live_predict_sentiment(custom_review_string: str):
-    # Runs the raw pipeline matrix mapping over the transformer tokenizer
-    prediction_probability = optimal_model.predict(custom_review_string)
-    sentiment = "Positive" if prediction_probability > 0.5 else "Negative"
-    return {"sentiment": sentiment, "confidence_score": float(prediction_probability)}
-🤝 Contribution & Optimization
-Feel free to open structural issues or fork the architecture to append higher-order transformer variants like RoBERTa or DeBERTa architectures.
-
-📄 License
-This benchmark environment is open-sourced under the MIT License.
+├── .github/
+│   └── workflows/
+│       └── ci-cd.yml                # Automated code quality check configurations
+├── data/
+│   ├── raw/                         # Raw unstructured IMDB dataset dumps (if any)
+│   └── processed/                   # Fully structured tokens and embedded arrays
+├── models/
+│   ├── tfidf_classifier.pkl         # Serialized lightweight statistical weights
+│   └── word2vec_embedding.bin       # Extracted static contextual neural maps
+├── notebooks/
+│   └── imdb_sentiment_analysis.ipynb # Main end-to-end analytical programming matrix
+├── scripts/
+│   ├── clean_text.py                # Pure Python script modular cleaning functions
+│   └── evaluate_metrics.py          # Decoupled matrix calculation utility hooks
+├── .gitignore                       # System tracking restriction registry (.venv, checkpoint caches)
+├── requirements.txt                 # Pinned baseline architectural package matrix
+└── README.md                        # Primary client documentation hub
